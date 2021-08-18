@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html>
+  <head>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <!-- target-densityDpi=device-dpi -->
+    <meta charset="utf-8">
+    <title>ICA - Cederberg Map</title>
+
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.0/dist/leaflet.css" />
+    <script src="https://unpkg.com/leaflet@1.7.0/dist/leaflet.js"></script>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <!-- google fonts link -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700&family=Raleway:wght@300;400;500&display=swap" rel="stylesheet">
+
+    <!-- favicon -->
+    <link rel="icon" type="image/png" href="assets/favicon-icon.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="assets/favicon-icon.png" sizes="16x16">
+
+  </head>
+
+  <body>
+
+    <!-- page wrapper END -->
+    <div class="page-wrapper" id="topFloor">
+
+      <!-- back to top arrow section START -->
+      <a href="#topFloor" class="top-arrow-conatiner">
+        <img src="assets/arrow-white.png" alt="Arrow Icon">
+      </a>
+      <!-- back to top arrow section END -->
+
+      <!-- navbar section START -->
+      <section class="navbar-section">
+        <div class="section-inner">
+          <img src="assets/initi-logo.jpeg" alt="Company Logo">
+          <div class="dropdown">
+            <button class="dropbtn" id="dropdownButton">Select a Ward</button>
+            <div class="dropdown-content" id="dropdownContent">
+              <a class="clicked-link" href="#wardOne">Ward 1</a>
+              <a class="clicked-link" href="#wardTwo">Ward 2</a>
+              <a class="clicked-link" href="#wardThree">Ward 3</a>
+              <a class="clicked-link" href="#wardFour">Ward 4</a>
+              <a class="clicked-link" href="#wardFive">Ward 5</a>
+              <a class="clicked-link" href="#wardSix">Ward 6</a>
+              <a class="clicked-link" href="#wardSeven">Ward 7</a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- navbar section END -->
+
+      <!-- banner section START -->
+      <section class="banner-section">
+        <div class="section-inner">
+          <h1>Initiative For Community<br/> Advancement</h1>
+          <div class="yellow-divider"></div>
+          <h2>Where Communities Lead</h2>
+        </div>
+      </section>
+      <!-- banner section END -->
+
+      <!-- intro section START -->
+      <section class="intro-section">
+        <div class="section-inner">
+          <div class="column column-left">
+            <h1>The Cederberg Area</h1>
+            <div class="yellow-divider"></div>
+            <p>Cederberg municipality is split into seven (7) wards. Each of these are shown below along with the identified NPOs in the area.</p>
+            <p class="disclaimer-text">Please note that unfortunately not all NPOs could be included in the maps. Cederberg is a large area and some parts are extremely rural, in addition not all NPOs were contactable, if we could not contact or locate them to confirm coordinates they have not been included.</p>
+          </div>
+          <div class="column column-right">
+            <!-- <img src="assets/Cederberg-ward-map-img.jpeg" alt="Cederberg Ward Map"> -->
+            <img src="assets/ica-map-numbered.png" alt="Cederberg Ward Map">
+          </div>
+        </div>
+      </section>
+      <!-- intro section END -->
+
+      <!-- map 1 START -->
+      <section class="ward-map-section">
+        <div class="section-inner">
+          <span class="map-achor-points" id="wardOne"></span>
+          <h2>Ward One</h2>
+          <p class="ward-description">Porterville Town, Voorberg and the rural area to the North of Porterville</p>
+          <div id="map" class="maps"></div>
+        </div>
+      </section>
+      <!-- map 1 END -->
+
+      <!-- map 2 START -->
+      <section class="ward-map-section">
+        <div class="section-inner">
+          <span class="map-achor-points" id="wardTwo"></span>
+          <h2>Ward Two</h2>
+          <p class="ward-description">Monte Bertha and the rural area to the South of Porterville</p>
+          <div id="map2" class="maps"></div>
+        </div>
+      </section>
+      <!-- map 2 END -->
+
+      <!-- map 3 START -->
+      <section class="ward-map-section">
+        <div class="section-inner">
+          <span class="map-achor-points" id="wardThree"></span>
+          <h2>Ward Three</h2>
+          <p class="ward-description">Western and Southern portion of Piketberg Town, De Hoek, Wittewater & Goedverwacht</p>
+          <div id="map3" class="maps"></div>
+        </div>
+      </section>
+      <!-- map 3 END -->
+
+      <!-- map 4 START -->
+      <section class="ward-map-section">
+        <div class="section-inner">
+          <span class="map-achor-points" id="wardFour"></span>
+          <h2>Ward Four</h2>
+          <p class="ward-description">North Eastern portion of Piketberg Town</p>
+          <div id="map4" class="maps"></div>
+        </div>
+      </section>
+      <!-- map 4 END -->
+
+      <!-- map 5 START -->
+      <section class="ward-map-section">
+        <div class="section-inner">
+          <span class="map-achor-points" id="wardFive"></span>
+          <h2>Ward Five</h2>
+          <p class="ward-description">Western and Southern portion of Eendekuil, Redelinghuys and Genadenberg</p>
+          <div id="map5" class="maps"></div>
+        </div>
+      </section>
+      <!-- map 5 END -->
+
+      <!-- map 6 START -->
+      <section class="ward-map-section">
+        <div class="section-inner">
+          <span class="map-achor-points" id="wardSix"></span>
+          <h2>Ward Six</h2>
+          <p class="ward-description">Aurora, Noordhoek and Dwarskersbos and the rural areas in-between</p>
+          <div id="map6" class="maps"></div>
+        </div>
+      </section>
+      <!-- map 6 END -->
+
+      <!-- map 7 START -->
+      <section class="ward-map-section">
+        <div class="section-inner">
+          <span class="map-achor-points" id="wardSeven"></span>
+          <h2>Ward Seven</h2>
+          <p class="ward-description">Velddrif which includes Port Owen and Laaiplek</p>
+          <div id="map7" class="maps"></div>
+        </div>
+      </section>
+      <!-- map 7 END -->
+
+    </div>
+    <!-- page wrapper END -->
+
+    <script src="./function.js"></script>
+
+  </body>
+</html>

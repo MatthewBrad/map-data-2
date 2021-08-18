@@ -1,0 +1,391 @@
+// colour variables START
+$white: #ffffff;
+$black: #000000;
+$clay: #c34028;
+$dark-grey: #262e44;
+$dark-grey-2: #333;
+$light-grey: #5c6668;
+$x-light-grey: #f5f5f5;
+$yellow: #fec96b;
+$box-shadow: rgba(0,0,0,0.3);
+// colour variables END
+
+// font variables START
+$primary-font: 'Montserrat', sans-serif;
+$secondary-font: 'Raleway', sans-serif;
+// font variables END
+
+// general styles START
+html, body, .page-wrapper {
+  scroll-behavior: smooth;
+}
+
+.page-wrapper {
+  .section-inner {
+    max-width: 1440px;
+    margin: 0 auto;
+  }
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: $primary-font;
+  margin: 0;
+}
+
+p, a, li, span {
+  font-family: $secondary-font;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+h1 {
+  font-weight: 400;
+  font-size: 40px;
+  margin-bottom: 40px;
+
+  @media only screen and (max-width: 770px) {
+    font-size: 30px;
+  }
+}
+
+h2 {
+  font-weight: 300;
+  font-size: 30px;
+
+  @media only screen and (max-width: 770px) {
+    font-size: 25px;
+  }
+}
+
+p {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 22px;
+
+  @media only screen and (max-width: 770px) {
+    font-size: 16px;
+  }
+}
+
+.yellow-divider {
+  background-color: $yellow;
+  height: 3px;
+  max-width: 200px;
+  width: 100%;
+  margin-top: 40px;
+  margin-bottom: 40px;
+
+  @media only screen and (max-width: 770px) {
+    max-width: 150px;
+    height: 2px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+}
+// general styles END
+
+// back to top arrow styles START
+.top-arrow-conatiner {
+  position: fixed;
+  right: 50px;
+  bottom: 0;
+  z-index: 10;
+  border-radius: 4px 4px 0 0;
+  background-color: $dark-grey-2;
+  padding: 15px 20px 10px 20px;
+  opacity: 0.9;
+  transition: 0.2s ease;
+  z-index: 9999;
+
+  @media only screen and (max-width: 770px) {
+    padding: 10px 15px 5px 15px;
+  }
+
+  &:hover {
+    transition: 0.2s ease;
+    background-color: $yellow;
+    opacity: 1;
+  }
+
+  img {
+    max-width: 15px;
+    width: 100%;
+
+    @media only screen and (max-width: 770px) {
+      max-width: 13px;
+    }
+  }
+}
+// back to top arrow styles END
+
+// navbar styles START
+.navbar-section {
+  position: sticky;
+  z-index: 9999;
+  top: 0;
+  left: 0;
+  background-color: $white;
+  padding: 20px 50px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid $x-light-grey;
+
+  @media only screen and (max-width: 770px) {
+    padding: 20px 10px;
+  }
+
+  .section-inner {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  img {
+    max-width: 200px;
+
+    @media only screen and (max-width: 770px) {
+      max-width: 130px;
+    }
+  }
+
+  .dropbtn {
+    background-color: $clay;
+    color: $white;
+    padding: 10px 30px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    font-family: $primary-font;
+    letter-spacing: 1.5px;
+    transition: 0.2s ease;
+
+    @media only screen and (max-width: 770px) {
+      padding: 10px 10px;
+      font-size: 12px;
+      letter-spacing: 1px;
+    }
+  }
+  
+  .dropdown {
+    position: relative;
+    display: inline-block;
+    float: right;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    right: 0;
+    background-color: $white;
+    border: 1px solid $x-light-grey;
+    min-width: 190px;
+    box-shadow: 0px 1px 30px $box-shadow;
+    z-index: 1;
+
+    @media only screen and (max-width: 770px) {
+      min-width: 115px;
+    }
+  }
+  
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: center;
+    font-family: $primary-font;
+  }
+
+  .dropdown-content a:hover {
+    background-color: $x-light-grey;
+  }
+
+  // .dropdown:hover .dropdown-content {
+  //   display: block;
+  // }
+
+  .dropdown:hover .dropbtn {
+    transition: 0.2s ease;
+    background-color: $black;
+  }
+}
+
+.hello-dropdown {
+  display: block!important;
+}
+// navbar styles END
+
+// banner styles START
+.banner-section {
+  background-color: $x-light-grey;
+  text-align: center;
+  padding: 100px 20px;
+
+  h1 {
+    color: $dark-grey;
+    margin-bottom: 40px;
+
+    @media only screen and (max-width: 770px) {
+      margin-bottom: 30px;
+    }
+  }
+
+  h2 {
+    color: $dark-grey;
+  }
+
+  .yellow-divider {
+    margin: 40px auto 40px auto;
+
+    @media only screen and (max-width: 770px) {
+      margin: 30px auto 30px auto;
+    }
+  }
+}
+// banner styles END
+
+// intro styles START
+.intro-section {
+  background-color: $white;
+
+  .section-inner {
+    padding: 100px 60px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    @media only screen and (max-width: 770px) {
+      flex-direction: column;
+      padding: 50px 20px;
+      text-align: center;
+    }
+  }
+
+  .yellow-divider {
+    @media only screen and (max-width: 770px) {
+      margin: 30px auto 30px auto;
+    }
+  }
+
+  .column {
+    width: 50%;
+
+    @media only screen and (max-width: 770px) {
+      width: 100%;
+    }
+  }
+
+  .column-right {
+    text-align: center;
+    padding-left: 25px;
+
+    @media only screen and (max-width: 770px) {
+      padding-left: 0px;
+    }
+  }
+
+  .column-left {
+    padding-right: 25px;
+
+    @media only screen and (max-width: 770px) {
+      padding-right: 0px;
+    }
+
+    .disclaimer-text {
+      font-style: italic;
+      font-size: 16px;
+      margin-top: 20px;
+    }
+  }
+
+  img {
+    max-width: 570px;
+    width: 100%;
+    border-radius: 5px;
+    border: 1px solid $x-light-grey;
+
+    @media only screen and (max-width: 770px) {
+      max-width: 100%;
+    }    
+  }
+
+  p {
+    @media only screen and (max-width: 770px) {
+      margin-bottom: 30px;
+    }
+  }
+}
+// intro styles END
+
+// ward map styles START
+.ward-map-section {
+  background-color: $x-light-grey;
+  text-align: center;
+  padding: 100px 20px;
+  position: relative;
+
+  @media only screen and (max-width: 770px) {
+    padding: 50px 20px;
+  }
+
+  &:nth-child(2n) {
+    background-color: $white;
+  }
+
+  .maps {
+    height: 500px;
+    width: 70%;
+    margin: 0 auto;
+    border-radius: 5px;
+    border: 1px solid $white;
+
+    @media only screen and (max-width: 770px) {
+      width: 90%;
+      height: 400px;
+    }
+  }
+
+  .leaflet-popup-content-wrapper {
+    border-radius: 5px;
+  }
+  
+  .company-popup {
+    text-align: center;
+
+    .company-name {
+      font-weight: bold;
+    }
+  
+    p {
+      margin-bottom: 20px;
+      font-size: 16px;
+      margin: 0;
+      line-height: 24px;
+    }
+  }
+
+  h2 {
+    margin-bottom: 10px;
+  }
+
+  .ward-description {
+    margin: 0 auto 50px auto;
+    max-width: 800px;
+    width: 100%;
+  }
+
+  .map-achor-points {
+    position: absolute;
+    top: 0;
+    margin-top: -50px;
+  }
+}
+// ward map styles END
+
