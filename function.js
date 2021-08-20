@@ -58,7 +58,7 @@ L.tileLayer('https://api.maptiler.com/maps/streets/{z}/{x}/{y}.png?key=B5wlfiSlx
 var marker = L.marker([-32.4919859,18.99797],{icon:orangeIcon}).addTo(map);
 marker.bindPopup("<div class='company-popup'><p class='company-name'>Brakfontein Landgoed Bewaarskool</p><p>Unknown</p><p>Year established: --</p><p>Economic, Social and Community Development</p><div>");
 
-var marker = L.marker([-32.7369022,19.0641806],{icon:orangeIcon}).addTo(map);
+var marker = L.marker([-32.7389022,19.0641806],{icon:orangeIcon}).addTo(map);
 marker.bindPopup("<div class='company-popup'><p class='company-name'>A.L.G. Bewaarskool</p><p>Unknown</p><p>Year established: --</p><p>Education and Research</p><div>");
 
 var marker = L.marker([-32.4915859,18.99797],{icon:orangeIcon}).addTo(map);
@@ -82,8 +82,8 @@ marker.bindPopup("<div class='company-popup'><p class='company-name'>ALG Bewaars
 var marker = L.marker([-32.7379022,19.0641806],{icon:orangeIcon}).addTo(map);
 marker.bindPopup("<div class='company-popup'><p class='company-name'>ALG Bewaarskool Noordhoek</p><p>Unknown</p><p>Year established: --</p><p>Education and Research</p><div>");
 
-var marker = L.marker([-32.7379022,19.0641806],{icon:greenIcon}).addTo(map);
-marker.bindPopup("<div class='company-popup'><p class='company-name'>Alg Boerdery Bewaarskool</p><p>Active</p><p>Year established: --</p><p>Education and Research</p><div>");
+var marker = L.marker([-32.7369022,19.0641806],{icon:greenIcon}).addTo(map);
+marker.bindPopup("<div class='company-popup'><p class='company-name'>ALG Boerdery Bewaarskool</p><p>Active</p><p>Year established: --</p><p>Education and Research</p><div>");
 // markers content END
 
 L.control.scale({
@@ -93,42 +93,109 @@ L.control.scale({
 // map 1 script END --------------------------------------------------------------------------------------------
 
 // map 2 script START --------------------------------------------------------------------------------------------
-var map2 = L.map('map2').setView([-33.025137501504486, 18.98797403991048], 15);
+var map2 = L.map('map2').setView([-32.5822802,19.0083159], 14);
 
 L.tileLayer('https://api.maptiler.com/maps/streets/{z}/{x}/{y}.png?key=B5wlfiSlx4L4pm27f4sm', {
   attribute: '<a href="https://www.maptiler.com/copyright/" target="_blank">&copy; MapTiler</a> <a href="https://www.openstreetmap.org/copyright" target="_blank">&copy; OpenStreetMap contributors</a>', 
 }).addTo(map2);
 
-// markers
-var markerb = L.marker([-33.0251874,18.9884058],{icon:orangeIcon}).addTo(map2);
-var marker2b = L.marker([-33.0297419,18.9863333],{icon:greenIcon}).addTo(map2);
-var marker3b = L.marker([-33.0264366,18.9894875],{icon:orangeIcon}).addTo(map2);
-var marker4b = L.marker([-33.0205448,18.9865807],{icon:greenIcon}).addTo(map2);
-var marker5b = L.marker([-33.0264366,18.9896875],{icon:orangeIcon}).addTo(map2);
-var marker6b = L.marker([-33.0252874,18.9884058],{icon:orangeIcon}).addTo(map2);
-var marker7b = L.marker([-33.0269442,18.9887809],{icon:orangeIcon}).addTo(map2);
-var marker8b = L.marker([-33.0186797,18.9875581],{icon:orangeIcon}).addTo(map2);
-var marker9b = L.marker([-33.0188797,18.9875581],{icon:orangeIcon}).addTo(map2);
-var marker10b = L.marker([-33.0271442,18.9887809],{icon:orangeIcon}).addTo(map2);
-var marker11b = L.marker([-33.0267442,18.9887809],{icon:orangeIcon}).addTo(map2);
-var marker12b = L.marker([-33.0299419,18.9863333],{icon:orangeIcon}).addTo(map2);
-var marker13b = L.marker([-33.0301419,18.9863333],{icon:orangeIcon}).addTo(map2);
+// markers content START
+var marker = L.marker([-32.5822802,19.0083159],{icon:orangeIcon}).addTo(map2);
+marker.bindPopup("<div class='company-popup'><p class='company-name'>Santa Cedarberg Tak</p><p>Unknown</p><p>Year established: --</p><p>Health</p><div>");
 
-// marker popups
-markerb.bindPopup("<div class='company-popup'><p class='company-name'>Anchor of Hope Community and Youth Development Centre</p><p>Unknown</p><p>Youth services and youth welfare</p><div>");
-marker2b.bindPopup("<div class='company-popup'><p class='company-name'>Bergriver Community Care Program</p><p>Active</p><p>Year established: 2012</p><p>Prevention & Education about HIV/AIDS</p><div>");
-marker3b.bindPopup("<div class='company-popup'><p class='company-name'>Bergrivier Community Foundation</p><p>Unknown</p><p>Year established: 2021</p><p>Development and Housing</p><div>");
-marker4b.bindPopup("<div class='company-popup'><p class='company-name'>Bergrivier Women And Girl Empowerment</p><p>Active</p><p>Year established: 2019</p><p>Development and Housing</p><div>");
-marker5b.bindPopup("<div class='company-popup'><p class='company-name'>Dolfyntjies Kleuterskool(ECD)</p><p>Unknown</p><p>Year established: 2011</p><p>Social Services (ECD)</p><div>");
-marker6b.bindPopup("<div class='company-popup'><p class='company-name'>Elim Pinkster Evangelie Sending Van Suid-Afrika</p><p>Unknown</p><p>Year established: 2017</p><p>Religious</p><div>");
-marker7b.bindPopup("<div class='company-popup'><p class='company-name'>Hosanna Pentecostal Ministries Of South Africa</p><p>Unknown</p><p>Year established: 2017</p><p>Religious</p><div>");
-marker8b.bindPopup("<div class='company-popup'><p class='company-name'>Ithemba HIV/AIDS Empowerment Programme</p><p>Unknown</p><p>Year established: 2006</p><p>Health (HIV/AIDS)</p><div>");
-marker9b.bindPopup("<div class='company-popup'><p class='company-name'>Jerigo Aftercare</p><p>Unknown</p><p>Year established: 2018</p><p>Social Services</p><div>");
-marker10b.bindPopup("<div class='company-popup'><p class='company-name'>Joyous Christian - Youth Foudation</p><p>Unknown</p><p>Year established: 2015</p><p>Development and Housing</p><div>");
-marker11b.bindPopup("<div class='company-popup'><p class='company-name'>Porterville Cricket Club</p><p>Unknown</p><p>Sports</p><div>");
-marker12b.bindPopup("<div class='company-popup'><p class='company-name'>Porterville Mountain Bike Club</p><p>Unknown</p><p>Year established: 2015</p><p>Sports</p><div>");
-marker13b.bindPopup("<div class='company-popup'><p class='company-name'>Sonstraaltjie Kleuterskool en nasorg Sentrum</p><p>Unknown</p><p>Year established: 2016</p><p>Child welfare, child services, day care</p><div>");
+var marker = L.marker([-32.5756759,19.0073612],{icon:orangeIcon}).addTo(map2);
+marker.bindPopup("<div class='company-popup'><p class='company-name'>Apostolic Revival Centre</p><p>Unknown</p><p>Year established: --</p><p>Religious</p><div>");
 
+var marker = L.marker([-32.5820637,19.0070105],{icon:orangeIcon}).addTo(map2);
+marker.bindPopup("<div class='company-popup'><p class='company-name'>Vryheids Pinkster Sending</p><p>Unknown</p><p>Year established: --</p><p>Religious</p><div>");
+
+var marker = L.marker([-32.5758607,19.0073696],{icon:orangeIcon}).addTo(map2);
+marker.bindPopup("<div class='company-popup'><p class='company-name'>Citrusdal Cultural and Youth Organization</p><p>Unknown</p><p>Year established: --</p><p>Social Services</p><div>");
+
+var marker = L.marker([-32.5825927,19.0060089],{icon:orangeIcon}).addTo(map2);
+marker.bindPopup("<div class='company-popup'><p class='company-name'>Citrusdal Sentrum vir Seniors</p><p>Unknown</p><p>Year established: --</p><p>Social Services</p><div>");
+
+var marker = L.marker([-32.5827552,19.0060344],{icon:orangeIcon}).addTo(map2);
+marker.bindPopup("<div class='company-popup'><p class='company-name'>Citrusdal Advice Office</p><p>Unknown</p><p>Year established: --</p><p>Advocacy oranisation</p><div>");
+
+var marker = L.marker([-32.5894216,19.0150608],{icon:greenIcon}).addTo(map2);
+marker.bindPopup("<div class='company-popup'><p class='company-name'>West Coast Netball Union</p><p>Active</p><p>Year established: 1970</p><p>Culture and recreation</p><div>");
+
+var marker = L.marker([-32.59426,19.0137413],{icon:greenIcon}).addTo(map2);
+marker.bindPopup("<div class='company-popup'><p class='company-name'>HUG-Help us Grow</p><p>Active</p><p>Year established: --</p><p>Community and neighborhood organisations</p><div>");
+
+var marker = L.marker([-32.5864126,19.0109669],{icon:greenIcon}).addTo(map2);
+marker.bindPopup("<div class='company-popup'><p class='company-name'>Cederberg Matzikama Aids Networks</p><p>Active</p><p>Year established: 2011</p><p>Health</p><div>");
+
+var marker = L.marker([-32.5808003,19.0055411],{icon:orangeIcon}).addTo(map2);
+marker.bindPopup("<div class='company-popup'><p class='company-name'>Advance Ministries of R.S.A</p><p>Unknown</p><p>Year established: --</p><p>Religious</p><div>");
+
+var marker = L.marker([-32.574579,19.009384],{icon:orangeIcon}).addTo(map2);
+marker.bindPopup("<div class='company-popup'><p class='company-name'>Citrusdal Community Of Hope Organisation</p><p>Unknown</p><p>Year established: --</p><p>Community and neighborhood organisations</p><div>");
+
+var marker = L.marker([-32.5844159,19.0085527],{icon:orangeIcon}).addTo(map2);
+marker.bindPopup("<div class='company-popup'><p class='company-name'>Cederberg Sport Association</p><p>Unknown</p><p>Year established: --</p><p>Sports</p><div>");
+
+var marker = L.marker([-32.5770012,19.0077903],{icon:orangeIcon}).addTo(map2);
+marker.bindPopup("<div class='company-popup'><p class='company-name'>Pinkster Arbeiders Vir Christus</p><p>Unknown</p><p>Year established: --</p><p>Religious</p><div>");
+
+var marker = L.marker([-32.5956503,19.0161986],{icon:redIcon}).addTo(map2);
+marker.bindPopup("<div class='company-popup'><p class='company-name'>Upliftment Through Dance</p><p>Inactive</p><p>Year established: --</p><p>Culture and recreation</p><div>");
+
+var marker = L.marker([-32.5943618,19.0135803],{icon:orangeIcon}).addTo(map2);
+marker.bindPopup("<div class='company-popup'><p class='company-name'>Womelele Mother And Child Micronutrient Initiative NPC</p><p>Unknown</p><p>Year established: --</p><p>Community and neighborhood organisations</p><div>");
+
+var marker = L.marker([-32.583990,19.007298],{icon:greenIcon}).addTo(map2);
+marker.bindPopup("<div class='company-popup'><p class='company-name'>Action For Community Transformation - Citrusdal</p><p>Active</p><p>Year established: --</p><p>Social Development</p><div>");
+
+var marker = L.marker([-32.5830102,19.0060642],{icon:orangeIcon}).addTo(map2);
+marker.bindPopup("<div class='company-popup'><p class='company-name'>Given Ministries In SA</p><p>Unknown</p><p>Year established: --</p><p>Religious</p><div>");
+
+var marker = L.marker([-32.5898686,19.0161961],{icon:greenIcon}).addTo(map2);
+marker.bindPopup("<div class='company-popup'><p class='company-name'>Haasbekkies Kleuterskool, Citrusdal</p><p>Active</p><p>Year established: --</p><p>Education and Research</p><div>");
+
+var marker = L.marker([-32.5757255,19.007218],{icon:orangeIcon}).addTo(map2);
+marker.bindPopup("<div class='company-popup'><p class='company-name'>Pinkster Evangelic Kerk</p><p>Unknown</p><p>Year established: --</p><p>Religious</p><div>");
+
+var marker = L.marker([-32.5805146,19.0058126],{icon:orangeIcon}).addTo(map2);
+marker.bindPopup("<div class='company-popup'><p class='company-name'>Hands Of Hope</p><p>Unknown</p><p>Year established: --</p><p>Advocacy organisation</p><div>");
+
+var marker = L.marker([-32.5839524,19.0075219],{icon:greenIcon}).addTo(map2);
+marker.bindPopup("<div class='company-popup'><p class='company-name'>Reenbogies Bewaarskool</p><p>Active</p><p>Year established: 2017</p><p>Education and Research</p><div>");
+
+var marker = L.marker([-32.5756265,19.0072616],{icon:orangeIcon}).addTo(map2);
+marker.bindPopup("<div class='company-popup'><p class='company-name'>Citrusdal Mummies Nest</p><p>Unknown</p><p>Year established: --</p><p>Social Services</p><div>");
+
+var marker = L.marker([-32.5819921,19.0080817],{icon:orangeIcon}).addTo(map2);
+marker.bindPopup("<div class='company-popup'><p class='company-name'>Cederberg Youth Development and Family Support Organisation</p><p>Unknown</p><p>Year established: --</p><p>Social services</p><div>");
+
+var marker = L.marker([-32.5725048,19.0075434],{icon:orangeIcon}).addTo(map2);
+marker.bindPopup("<div class='company-popup'><p class='company-name'>Die Here ons Geregtigheid Pinkster Sending-SA</p><p>Unknown</p><p>Year established: --</p><p>Religious</p><div>");
+
+var marker = L.marker([-32.5737595,19.0095956],{icon:orangeIcon}).addTo(map2);
+marker.bindPopup("<div class='company-popup'><p class='company-name'>Citrusdal Soup Kitchen/HIV/AIDS Inisiative</p><p>Unknown</p><p>Year established: --</p><p>Health</p><div>");
+
+var marker = L.marker([-32.5902758,19.0168061],{icon:orangeIcon}).addTo(map2);
+marker.bindPopup("<div class='company-popup'><p class='company-name'>Sinethemba Youth Development and Family Support Organisation</p><p>Unknown</p><p>Year established: --</p><p>Social services</p><div>");
+
+var marker = L.marker([-32.5835133,19.0057275],{icon:greenIcon}).addTo(map2);
+marker.bindPopup("<div class='company-popup'><p class='company-name'>POMARIO PRIVAATSKOOL NPC</p><p>Active</p><p>Year established: --</p><p>Education and Research</p><div>");
+
+var marker = L.marker([-32.5761294,19.0107556],{icon:orangeIcon}).addTo(map2);
+marker.bindPopup("<div class='company-popup'><p class='company-name'>HERBOUER VAN GEBREEKTE MURE / REPAIRER OF THE BREACH</p><p>Unknown</p><p>Year established: --</p><p>Religious</p><div>");
+
+var marker = L.marker([-32.584484,19.0080687],{icon:greenIcon}).addTo(map2);
+marker.bindPopup("<div class='company-popup'><p class='company-name'>Die Babbel en Krabbel Bewaarskool</p><p>Active</p><p>Year established: 1991</p><p>Social Services (ECD)</p><div>");
+
+var marker = L.marker([-32.5865858,19.0114412],{icon:greenIcon}).addTo(map2);
+marker.bindPopup("<div class='company-popup'><p class='company-name'>Ons Huis</p><p>Active</p><p>Year established: 1972</p><p>Social Services (Elderly)</p><div>");
+
+var marker = L.marker([-32.5769989,19.0080029],{icon:greenIcon}).addTo(map2);
+marker.bindPopup("<div class='company-popup'><p class='company-name'>Sonstraaltjies Educare Centre</p><p>Active</p><p>Year established: --</p><p>Education and Research</p><div>");
+
+var marker = L.marker([-32.5943512,19.013442],{icon:greenIcon}).addTo(map2);
+marker.bindPopup("<div class='company-popup'><p class='company-name'>Citrusdal Animal Rescue</p><p>Active</p><p>Year established: --</p><p>Animal Welfare</p><div>");
+// markers content END
 
 L.control.scale({
   metric: true,
