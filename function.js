@@ -444,37 +444,34 @@ L.control.scale({
 // map 5 script END --------------------------------------------------------------------------------------------
 
 // map 6 script START --------------------------------------------------------------------------------------------
-var map6 = L.map('map6').setView([-32.410200,18.455602],9);
+var map6 = L.map('map6').setView([-32.1188253,18.8845423],10);
 
 L.tileLayer('https://api.maptiler.com/maps/streets/{z}/{x}/{y}.png?key=B5wlfiSlx4L4pm27f4sm', {
   attribute: '<a href="https://www.maptiler.com/copyright/" target="_blank">&copy; MapTiler</a> <a href="https://www.openstreetmap.org/copyright" target="_blank">&copy; OpenStreetMap contributors</a>', 
 }).addTo(map6);
 
-// markers
-var markerf = L.marker([-32.707200,18.485602],{icon:orangeIcon}).addTo(map6);
-var marker3f = L.marker([-32.767316, 18.171454],{icon:orangeIcon}).addTo(map6);
-var marker4f = L.marker([-32.7713329,18.1662135],{icon:greenIcon}).addTo(map6);
-var marker5f = L.marker([-32.7647015,18.1710038],{icon:orangeIcon}).addTo(map6);
-var marker6f = L.marker([-32.7639945,18.1707686],{icon:orangeIcon}).addTo(map6);
-var marker7f = L.marker([-32.764272,18.1728009],{icon:greenIcon}).addTo(map6);
-var marker8f = L.marker([-32.7046007,18.4806693],{icon:orangeIcon}).addTo(map6);
-var marker9f = L.marker([-32.7615518,18.17263],{icon:orangeIcon}).addTo(map6);
-var marker10f = L.marker([-32.7662935,18.1693863],{icon:greenIcon}).addTo(map6);
-var marker11f = L.marker([-32.6981315,18.2291893],{icon:orangeIcon}).addTo(map6);
-var marker12f = L.marker([-32.09506, 18.62695],{icon:orangeIcon}).addTo(map6);
+// markers content START
+var marker = L.marker([-32.1188253,18.8845423],{icon:greenIcon}).addTo(map6);
+marker.bindPopup("<div class='company-popup'><p class='company-name'>Lemoenland Educare</p><p>Active</p><p>Year established: --</p><p>Education and Research</p><div>");
 
-// marker popups
-markerf.bindPopup("<div class='company-popup'><p class='company-name'>Aurora Womens Network</p><p>Unknown</p><p>Community and neighborhood organisation (Women)</p><div>");
-marker3f.bindPopup("<div class='company-popup'><p class='company-name'>Pelikaan Bewaarskool(ECD)</p><p>Unknown</p><p>Year established: 2011</p><p>Social Services (ECD)</p><div>");
-marker4f.bindPopup("<div class='company-popup'><p class='company-name'>Buyah Disability Centre</p><p>Active</p><p>Year established: 2019</p><p>Social Services</p><div>");
-marker5f.bindPopup("<div class='company-popup'><p class='company-name'>Rehobot Herlewing Pinkster Kerk</p><p>Unknown</p><p>Year established: 2014</p><p>Religious</p><div>");
-marker6f.bindPopup("<div class='company-popup'><p class='company-name'>Revelations</p><p>Unknown</p><p>Year established: 2017</p><p>Community and neighborhood organisations</p><div>");
-marker7f.bindPopup("<div class='company-popup'><p class='company-name'>FDSA Velddrif</p><p>Active</p><p>Year established: 2007</p><p>Child welfare, child services, day care</p><div>");
-marker8f.bindPopup("<div class='company-popup'><p class='company-name'>Sandveld Sonstraaltjies</p><p>Unknown</p><p>Social Services (ECD)</p><div>");
-marker9f.bindPopup("<div class='company-popup'><p class='company-name'>Huis Van Geloof Hoop Liefde</p><p>Unknown</p><p>Year established: 2018</p><p>Development and Housing</p><div>");
-marker10f.bindPopup("<div class='company-popup'><p class='company-name'>Youth Healing & Delivered Ministries Centre</p><p>Active</p><p>Year established: 2017</p><p>Religious</p><div>");
-marker11f.bindPopup("<div class='company-popup'><p class='company-name'>Slimkoppies Academy(ECD)</p><p>Unknown</p><p>Social Services (ECD)</p><div>");
-marker12f.bindPopup("<div class='company-popup'><p class='company-name'>Calvin Cloete Ministries</p><p>Unknown</p><p>Year established: 2017</p><p>Religious</p><div>");
+var marker = L.marker([-32.2370642,18.9231147],{icon:orangeIcon}).addTo(map6);
+marker.bindPopup("<div class='company-popup'><p class='company-name'>Clanwilliam Aquatic Club</p><p>Unknown</p><p>Year established: --</p><p>Culture and Recreation</p><div>");
+
+var marker = L.marker([-32.1205609,19.0594592],{icon:redIcon}).addTo(map6);
+marker.bindPopup("<div class='company-popup'><p class='company-name'>Agter-Pakhuis Ontwikkelingsvereniging</p><p>Inactive</p><p>Year established: --</p><p>Social Development</p><div>");
+
+var marker = L.marker([-32.1123854,19.0668064],{icon:greenIcon}).addTo(map6);
+marker.bindPopup("<div class='company-popup'><p class='company-name'>Rocklands Association For Development</p><p>Active</p><p>Year established: 2017</p><p>Community and neighborhood organisations</p><div>");
+
+var marker = L.marker([-31.9996277,18.7753769],{icon:orangeIcon}).addTo(map6);
+marker.bindPopup("<div class='company-popup'><p class='company-name'>Die Rondeberg Oord Trust</p><p>Unknown</p><p>Year established: 2017</p><p>Advocacy organizations</p><div>");
+
+var marker = L.marker([-32.111933,19.0676876],{icon:greenIcon}).addTo(map6);
+marker.bindPopup("<div class='company-popup'><p class='company-name'>The fynbos mengles(mixing)</p><p>Active</p><p>Year established: 2019</p><p>Environment</p><div>");
+
+var marker = L.marker([-32.2769673,19.2145939],{icon:orangeIcon}).addTo(map6);
+marker.bindPopup("<div class='company-popup'><p class='company-name'>Wupperthal ECD and Aftercare Centre</p><p>Unknown</p><p>Year established: --</p><p>Social service (ECD)</p><div>");
+// markers content END
 
 L.control.scale({
   metric: true,
