@@ -195,6 +195,9 @@ marker.bindPopup("<div class='company-popup'><p class='company-name'>Sonstraaltj
 
 var marker = L.marker([-32.5943512,19.013442],{icon:greenIcon}).addTo(map2);
 marker.bindPopup("<div class='company-popup'><p class='company-name'>Citrusdal Animal Rescue</p><p>Active</p><p>Year established: --</p><p>Animal Welfare</p><div>");
+
+var marker = L.marker([-32.575163, 19.004569],{icon:orangeIcon}).addTo(map2);
+marker.bindPopup("<div class='company-popup'><p class='company-name'>Citrusdal Education Centre</p><p>Unknown</p><p>Year established: --</p><p>Economic, Social and Community Development</p><div>");
 // markers content END
 
 L.control.scale({
@@ -204,16 +207,13 @@ L.control.scale({
 // map 2 script END --------------------------------------------------------------------------------------------
 
 // map 3 script START --------------------------------------------------------------------------------------------
-var map3 = L.map('map3').setView([-32.372163, 19.000569], 10);
+var map3 = L.map('map3').setView([-32.252163, 18.900569], 11);
 
 L.tileLayer('https://api.maptiler.com/maps/streets/{z}/{x}/{y}.png?key=B5wlfiSlx4L4pm27f4sm', {
   attribute: '<a href="https://www.maptiler.com/copyright/" target="_blank">&copy; MapTiler</a> <a href="https://www.openstreetmap.org/copyright" target="_blank">&copy; OpenStreetMap contributors</a>', 
 }).addTo(map3);
 
 // markers content START
-var marker = L.marker([-32.575163, 19.004569],{icon:orangeIcon}).addTo(map3);
-marker.bindPopup("<div class='company-popup'><p class='company-name'>Citrusdal Education Centre</p><p>Unknown</p><p>Year established: --</p><p>Economic, Social and Community Development</p><div>");
-
 var marker = L.marker([-32.1841751,18.891257],{icon:orangeIcon}).addTo(map3);
 marker.bindPopup("<div class='company-popup'><p class='company-name'>Clanwilliam Hospitaalvereniging</p><p>Unknown</p><p>Year established: --</p><p>Health</p><div>");
 
